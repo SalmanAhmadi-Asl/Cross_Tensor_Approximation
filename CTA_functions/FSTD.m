@@ -1,5 +1,19 @@
 function [Y]=FSTD(X,R1,R2,R3)
 
+%This the implementation of the algorithm developed in 
+% @article{caiafa2010generalizing,
+%   title={Generalizing the column--row matrix decomposition to multi-way arrays},
+%   author={Caiafa, Cesar F and Cichocki, Andrzej},
+%   journal={Linear Algebra and its Applications},
+%   volume={433},
+%   number={3},
+%   pages={557--573},
+%   year={2010},
+%   publisher={Elsevier}
+% }
+%%In the above-mentioned paper, the algorithm is called "FSTD1".
+
+
 S_X=size(X);
 C1=tenmat(X,[1]);
 C2=tenmat(X,[2]);
