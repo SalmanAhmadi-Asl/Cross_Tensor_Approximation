@@ -16,6 +16,7 @@ r=randsample(S12,R1);
 D{1}=C{1}(:,r);
 QQ{1}=pinv(D{1});
 
+%randsample is used for sampling without replacement and randi is for sampling with replacement
 %r = randi([1 S22],1,R2);
 r=randsample(S22,R2);
 D{2}=C{2}(:,r);
