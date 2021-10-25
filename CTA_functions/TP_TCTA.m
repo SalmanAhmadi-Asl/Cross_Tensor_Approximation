@@ -1,4 +1,8 @@
 function [Y]=TP_TCTA(X,R1,R2)
+
+%This is the implementation of the Two-passes tubal CTA (TP-TCTA)
+%algorithm
+
 N_m=size(X);
 FX=fft(X,[],3);
 
