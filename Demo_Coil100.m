@@ -41,16 +41,5 @@ for i=1:30
 imshow(uint8(A_est(:,:,:,i,5)))
 pause
 end
-%%%%%%%%%%%%%%%%%%%%%%%%%%%CTA_FS Algorithm
-tic
-[Y]=CTA_FS_Faster(A_Resh,M,N);
-toc
 
-A_est=reshape(Y,[128,128,3,30,30]);
-
-disp(['CTA_FS Algorithm:'])
-disp(['Relative error=',num2str(norm(A_est(:)-A_1(:))/norm(A_1(:))),'Sampling ratio=', ...
-    num2str(CTA_FS_Comp_Ratio(A_Resh,M,N))])
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
