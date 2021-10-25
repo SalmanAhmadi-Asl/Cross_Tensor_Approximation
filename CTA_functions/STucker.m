@@ -1,5 +1,5 @@
 function [Y]=STucker(X,R1,R2,R3)
-
+%This is the implementation of the sampling Tucker (STucker) Algorithm
 C{1}=double(tenmat(X,[1]));
 [S11,S12]=size(C{1});
  
