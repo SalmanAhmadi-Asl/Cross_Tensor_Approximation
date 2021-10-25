@@ -1,4 +1,19 @@
 function [Y]=CTA_FS(X,M,N)
+%This is the implementation of the tensor CUR decomposition introduced in 
+%
+% @article{mahoney2008tensor,
+%   title={Tensor-CUR decompositions for tensor-based data},
+%   author={Mahoney, Michael W and Maggioni, Mauro and Drineas, Petros},
+%   journal={SIAM Journal on Matrix Analysis and Applications},
+%   volume={30},
+%   number={3},
+%   pages={957--987},
+%   year={2008},
+%   publisher={SIAM}
+% }
+%The algorithm selects a part of frontal slices and tubes of a 3rd order data tensor and based on them, an approximation 
+%of the underlying data tensor is computed.
+
 X=double(X);
 N_m=size(X);
 
