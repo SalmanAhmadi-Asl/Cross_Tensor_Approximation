@@ -1,4 +1,19 @@
 function [Y]=CTA_FS_Faster(X,R1,R2)
+
+%This is the fast implementation of the CTA_FC algorithm. 
+
+%The CTA_FC algorithm was developed in the following paper
+% @article{mahoney2008tensor,
+%   title={Tensor-CUR decompositions for tensor-based data},
+%   author={Mahoney, Michael W and Maggioni, Mauro and Drineas, Petros},
+%   journal={SIAM Journal on Matrix Analysis and Applications},
+%   volume={30},
+%   number={3},
+%   pages={957--987},
+%   year={2008},
+%   publisher={SIAM}
+% }
+
 X=double(X);
 N_m=size(X);
 
