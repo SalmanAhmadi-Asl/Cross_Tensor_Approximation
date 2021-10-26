@@ -1,5 +1,16 @@
 function [Y]=HOID(X,R_1,R_2,R_3)
 
+% This is the implementation of the HOID algorithm developed in 
+% @article{saibaba2016hoid,
+%   title={HOID: higher order interpolatory decomposition for tensors based on Tucker representation},
+%   author={Saibaba, Arvind K},
+%   journal={SIAM Journal on Matrix Analysis and Applications},
+%   volume={37},
+%   number={3},
+%   pages={1223--1249},
+%   year={2016},
+%   publisher={SIAM}
+% }
 %(R_1,R_2,R_3) is the Tucker rank 
 
 C{1}=double(tenmat(X,[1]));
