@@ -1,6 +1,6 @@
 function [Y]=F_TCT(X,R1,R2)
 
-%This is implementation of the Fast Tubal CTA (F-TCTA) algorithm.
+%This is implementation of the Fast Tubal CTA (F-TCTA) or single-pass tubal CTA algorithm.
 
 N_m=size(X);
 FX=fft(X,[],3);
